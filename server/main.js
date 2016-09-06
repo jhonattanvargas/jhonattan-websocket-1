@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-var port = process.env.PORT || 5000
+var port = 14113 //process.env.PORT || 5000
 
 
 var messages=[{
