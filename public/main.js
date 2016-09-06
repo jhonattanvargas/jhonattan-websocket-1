@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:8080',{'forceNew':true});
+var socket = io.connect('https://jhonattan-websocket-1.herokuapp.com:3000',{'forceNew':true});
 
 socket.on('messages',function(data){
 	console.log(data);

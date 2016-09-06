@@ -26,6 +26,6 @@ io.on('connection',function(socket){
 	});
 })
 
-server.listen(8080,function(){
-	console.log("Servidor corriendo en http://localhost:8080");
+server.listen(3000,function(){
+	console.log("Servidor corriendo en https://jhonattan-websocket-1.herokuapp.com:3000");
 });
