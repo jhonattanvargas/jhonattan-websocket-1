@@ -1,5 +1,5 @@
 
-var socket = io.connect('https://jhonattan-websocket-1.herokuapp.com:5000',{'forceNew':true});
+var socket = io.connect('https://jhonattan-websocket-1.herokuapp.com:14113',{'forceNew':true});
 
 socket.on('messages',function(data){
 	console.log(data);
