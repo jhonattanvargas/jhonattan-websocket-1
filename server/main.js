@@ -3,6 +3,9 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
+var port = process.env.PORT || 5000
+
+
 var messages=[{
 		id:1,
 		text:"Hola soy un mensaje",
@@ -26,6 +29,7 @@ io.on('connection',function(socket){
 	});
 })
 
-server.listen(3000,function(){
-	console.log("Servidor corriendo en https://jhonattan-websocket-1.herokuapp.com:3000");
+server.listen(port,function(){
+	console.log("Servidor corriendo en ");
+	console.log(port);
 });
